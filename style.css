@@ -1,0 +1,133 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #333399, #00bbff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.login-card{
+    width: 450px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 3rem;
+    border-radius: 30px;
+    position: relative;
+}
+
+.login-card::before{
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    inset: 0;
+    transform: rotate(-4deg);
+    z-index: -1;
+}
+/* Everything in Login Card is in center */
+.login-card-logo, 
+.login-card-header, 
+.login-card-footer {
+    text-align: center;
+}
+
+/* LoginCard - Logo */
+.login-card-logo{
+    margin-bottom: 2rem;
+}
+.login-card-logo img{
+ width: 60px;   
+}
+/* /////// */
+
+
+/* LoginCard - Header */
+.login-card-header {
+    margin-bottom: 2rem;
+}
+/* --Title "Sign In"-- */
+.login-card-header h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+/* -- Disc:"Login to my account" -- */
+.login-card-header h1 + div {
+    font-size: calc(1rem * 0.8);
+    opacity: .65;
+}
+/* END OF ##LoginCard - Header## */
+
+
+/* LoginCard - Form */
+.login-card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/* --All of the items in the Form */
+.login-card-form .form-item-mail,
+.login-card-form .form-item-password,
+.login-card-form .form-item-other {
+    position: relative;
+}
+/* --Item: Email - icon (Email , Password) */
+.login-card-form .form-item-icon{
+    position: absolute;
+    left: -1.6rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+/* --Item: Other */
+.login-card-form .form-item-other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem* 0.8);
+    margin-bottom: .7rem;
+}
+/* --Item: Other - checkBox */
+.login-card-form .form-item-other .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+/* END OF ##LoginCard - Form## */
+
+
+/* LoginCard - Footer */
+.login-card-footer {
+
+}
+
+
+/* END OF ##LoginCard - Footer##  */
+
+
+/* Effect on the links */
+.login-card a {
+    text-decoration: none;
+    color:#bf2bdd;
+}
+
+.login-card a:hover{
+    text-decoration: underline;
+
+}
+/* /////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
